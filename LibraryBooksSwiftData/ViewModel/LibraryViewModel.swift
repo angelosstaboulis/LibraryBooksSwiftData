@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftData
-final class LibraryViewModel:ObservableObject{
+final class LibraryViewModel{
     func insert(book:Item,modelContext:ModelContext){
         do{
             let newItem = Item(id: book.id, title: book.title, isbn: book.isbn, price: book.price)

@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 struct MenuSection: View {
     @Environment(\.modelContext) private var modelContext
-    @StateObject var model = LibraryViewModel()
+    @State var model = LibraryViewModel()
     @Query var items: [Item]
     @State var book:Item
     @State var getItem:Item
